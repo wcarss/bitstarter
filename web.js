@@ -6,7 +6,7 @@ var index_file = "index.html"
 
 app.get('/', function(request, response) {
   response.send(
-    fs.readFileSync(index_file, {encoding:'utf8'})
+    fs.readFileSync(index_file, {encoding:'utf-8'})
   )
 });
 
